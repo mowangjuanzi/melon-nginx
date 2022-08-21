@@ -1,0 +1,12 @@
+worker_processes: 1
+daemon: on
+
+pid: /var/run/melon.pid
+
+http:
+    server:
+        listen: 80
+        server_name: localhost
+
+        root: /usr/share/nginx/html
+        index: index.html
